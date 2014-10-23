@@ -367,27 +367,30 @@ button:focus {
 .landing {
     text-align: center;
     padding: 100px 20px 0px 20px;
-}
 
-.landing p {
+  p {
     font-size: 1.3rem;
     line-height: 2.4rem;
+  }
+
 }
 
 .social {
     text-align: center;
     padding: 0px 20px 20px 20px;
+
+  a {
+      font-size: 2rem;
+      color: #C9C4C6;
+      padding: 0px 10px;
+  }
+
+  a:hover {
+      color: darksalmon;
+  }
+
 }
 
-.social a {
-    font-size: 2rem;
-    color: #C9C4C6;
-    padding: 0px 10px;
-}
-
-.social a:hover {
-    color: darksalmon;
-}
 
 /* Medium screens (640px) */
 @media (min-width: 40rem) {
@@ -396,16 +399,22 @@ button:focus {
     padding: 140px 20px 0px 20px;
 }
 
-.landing p, .about p {
+  p {
     font-size: 1.6rem;
     line-height: 2.6rem;
+}
+
+.about p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .social {
     padding: 10px 20px 50px 20px;
 }
 
-.social a {
+.social {
+  a {
     font-size: 3.5rem;
 }
 
