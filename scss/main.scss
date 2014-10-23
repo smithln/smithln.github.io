@@ -516,21 +516,22 @@ button:focus {
 
 .work-samples {
   padding: 60px 0px 100px 0px;
-}
 
-.work-samples h5 {
-  position: absolute;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-  background-color: rgba(30, 30, 30, .4);
-  color: white;
-  z-index: 1000;
-  border: 1px solid white;
-  padding: 5px 10px;
-  left: 10%;
-  right: 10%;
-  top: 25%;
+  h5 {
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    background-color: rgba(30, 30, 30, .4);
+    color: white;
+    z-index: 1000;
+    border: 1px solid white;
+    padding: 5px 10px;
+    left: 10%;
+    right: 10%;
+    top: 25%;
+  }
+
 }
 
 .work-description {
