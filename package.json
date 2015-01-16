@@ -1,5 +1,6 @@
 {
-  "name": "sass-class",
+  "name": "smithln.github.io",
+  "private": true,
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +11,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "node-sass": "~0.9.6",
-    "gulp": "~3.8.8",
+    "gulp": "~3.8.10",
     "gulp-sass": "~1.0.0"
   }
 }
