@@ -89,16 +89,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $coral;
+    color: $blue;
     text-decoration: none;
 
     &:visited {
-        color: $coral;
+        color: $blue;
     }
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
@@ -193,8 +192,8 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 40px;
+        height: 40px;
         vertical-align: middle;
 
         path {

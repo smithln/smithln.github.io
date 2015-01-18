@@ -1,0 +1,24 @@
+.social-media-list {
+  text-align: center;
+  margin-bottom: 5%;
+    a {
+      font-size: 200%;
+      padding-right: 5%;
+      text-align: center;
+      color: $text-color;
+    }
+    a:last-child {
+      padding-right: 0;
+    }
+    a:hover {
+      color: $black;
+    }
+}
+
+@include media-query($on-palm) {
+  .social-media-list {
+    a {
+      font-size: 150%;
+    }
+  }
+}

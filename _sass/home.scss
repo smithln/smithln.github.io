@@ -2,10 +2,14 @@
   .wrapper {
     .home {
       h2 {
-        font-size: 30px;
+        font-size: 27px;
         letter-spacing: .05rem;
         text-align: center;
         font-family: $serif-font-family;
+
+        @include media-query($on-palm) {
+          font-size: 18px;
+        }
       }
     }
   }

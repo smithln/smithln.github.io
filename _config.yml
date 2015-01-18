@@ -10,10 +10,9 @@ url: "http://www.laurenicolesmith.com" # the base hostname & protocol for your s
 
 twitter_username: smithln
 github_username:  smithln
-instagram username: laurenicolesmith
-linkedin username: laurenicolesmith
-exposure username: laurenicolesmith
-rdio username: laurenicolesmith
+instagram_username: laurenicolesmith
+dribbble_username: smithln
+linkedin_username: laurenicolesmith
 
 # Build settings
 markdown: kramdown

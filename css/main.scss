@@ -28,6 +28,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 $coral:            rgb(239, 88, 34);
 $white:            #fff;
 $black:            #303030;
+$blue:             #22B9EF;
 
 // Width of the content area
 $content-width:    800px;
@@ -56,5 +57,6 @@ $on-laptop:        800px;
         "base",
         "layout",
         "syntax-highlighting",
-        "home"
+        "home",
+        "social-list"
 ;
