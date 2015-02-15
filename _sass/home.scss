@@ -1,16 +1,39 @@
-.page-content {
-  .wrapper {
-    .home {
-      h2 {
-        font-size: 27px;
-        letter-spacing: .05rem;
-        text-align: center;
-        font-family: $serif-font-family;
+.home {
+  text-align: center;
 
-        @include media-query($on-palm) {
-          font-size: 18px;
-        }
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 3% 0;
+      li {
+        background: $blue;
+        display: inline-block;
+        font-size: $small-font-size;
+        font-weight: $bold-font-weight;
+        letter-spacing: .09rem;
+        padding: 0 2%;
+        text-transform: uppercase;
       }
+      li:hover {
+        background: darken($blue, 10%);
+      }
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 27px;
+    letter-spacing: .05rem;
+    font-family: $serif-font-family;
+
+    @include media-query($on-palm) {
+      font-size: 18px;
+    }
+    a {
+      font-size: 22px;
     }
   }
 }
