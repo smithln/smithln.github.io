@@ -175,6 +175,15 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
+.wrapper--photos {
+  max-width: -webkit-calc(#{$content-width} * 1.5);
+  max-width:         calc(#{$content-width} * 1.5);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+}
 
 
 

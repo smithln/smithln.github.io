@@ -4,19 +4,22 @@
 .site-header {
     min-height: 56px;
     text-align: center;
-    margin-top: 7%;
+    margin: 0 auto;
+    margin-top: 2%;
+    border-bottom: 5px solid $grey-color-light;
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
 }
 
 .site-title {
+    float: left;
     font-weight: $bold-font-weight;
     color: $black;
     font-size: 20px;
     line-height: 40px;
     letter-spacing: .2rem;
-    padding: 10px 25px;
+    padding: 10px 0px;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 5px solid $grey-color-light;
 
     &,
     &:visited {
@@ -26,72 +29,46 @@
 
     @include media-query($on-palm) {
       font-size: 16px;
+      width: 100%;
+      text-align: center;
+      padding: 0;
     }
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
 
-    .menu-icon {
-        display: none;
+nav {
+  float: right;
+  padding-top: 18px;
+  width: 40%;
+  text-align: right;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    li {
+      display: inline-block;
+      font-size: $small-font-size;
+      font-weight: $bold-font-weight;
+      letter-spacing: .09rem;
+      padding-left: 5%;
+      text-transform: uppercase;
     }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+    i {
+      padding-left: 5%;
     }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
+  }
+  @include media-query($on-palm) {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 20px;
+    ul {
+      li {
+        &:first-child {
+          padding-left: 0;
         }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
+      }
     }
+  }
 }
-
 
 
 /**
@@ -172,7 +149,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 20px 0;
 }
 
 .page-heading {
