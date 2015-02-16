@@ -2,15 +2,20 @@
   text-align: center;
 
   h2 {
-    font-size: 27px;
+    margin: 20% 0 5%;
+    font-size: 35px;
     letter-spacing: .05rem;
     font-family: $serif-font-family;
 
     @include media-query($on-palm) {
-      font-size: 18px;
+      font-size: 24px;
     }
     a {
-      font-size: 22px;
+      font-size: 30px;
+
+      @include media-query($on-palm) {
+        font-size: 20px;
+      }
     }
   }
 }

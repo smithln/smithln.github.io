@@ -7,7 +7,7 @@
     margin: 0 auto;
     margin-top: 2%;
     border-bottom: 5px solid $grey-color-light;
-    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: (#{$content-width});
 }
 
 .site-title {
@@ -75,6 +75,9 @@ nav {
  * Site footer
  */
 .site-footer {
+    border-top: 5px solid $grey-color-light;
+    max-width: (#{$content-width});
+    margin: 0 auto;
     padding: $spacing-unit 0;
     text-align: center;
     font-family: $serif-font-family;
