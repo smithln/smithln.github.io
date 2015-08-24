@@ -89,22 +89,22 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $blue;
+    color: $green;
     text-decoration: none;
 
     &:visited {
-        color: $blue;
+        color: $green;
     }
 
     &:hover {
-        color: darken($blue, 10%);
+        color: darken($green, 10%);
     }
 
   &.link-border {
     color: $text-color;
     &:hover {
       color: $text-color;
-      border-bottom: 2px solid $blue;
+      border-bottom: 2px solid $green;
     }
   }
 }

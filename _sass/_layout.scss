@@ -37,10 +37,7 @@
 
 
 nav {
-  float: right;
-  padding-top: 18px;
-  width: 40%;
-  text-align: right;
+  text-align: center;
   ul {
     list-style-type: none;
     margin: 0;
@@ -51,6 +48,11 @@ nav {
       letter-spacing: .09rem;
       padding-left: 5%;
       text-transform: uppercase;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
     }
     i {
       padding-left: 5%;
