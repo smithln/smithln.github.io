@@ -1,0 +1,40 @@
+.about {
+  margin-top: 300px;
+  position: relative;
+
+  .about__title {
+    margin-bottom: 0;
+  }
+
+  .about__description {
+    margin-top: 10px;
+  }
+}
+
+.contact {
+  a {
+    border-bottom: 0;
+    color: $gray;
+    font-size: $large-font-size;
+    margin-right: 20px;
+    padding-bottom: 0;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .about {
+    margin-top: 100px;
+  }
+
+  .about__title {
+    font-size: $large-font-size;
+  }
+
+  .about__description {
+    font-size: $medium-font-size;
+  }
+}

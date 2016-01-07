@@ -1,0 +1,57 @@
+@import 'variables';
+
+@import 'home';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: $black;
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 80%;
+}
+
+a {
+  border-bottom: 1px solid;
+  color: $brand-primary;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  font-weight: inherit;
+  line-height: 1.4;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: $larger-font-size;
+}
+
+h2 {
+  font-size: $large-font-size;
+}
+
+h3 {
+  font-size: $medium-font-size;
+}
+
+h4 {
+  font-size: $medium-font-size;
+}
+
+small {
+  font-size: $small-font-size;
+}
