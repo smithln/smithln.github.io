@@ -1,5 +1,5 @@
 @import 'scss/helpers/variables';
-
+@import 'scss/components/lists';
 @import 'scss/views/home';
 
 html {
@@ -11,13 +11,12 @@ body {
   font-family: $font-primary;
   font-weight: 400;
   line-height: 1.45;
-  margin-top: 300px;
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1200px;
-  width: 80%;
+  max-width: 960px;
+  padding: 5.584em 1.33em 0;
 }
 
 a {
@@ -55,4 +54,24 @@ h4 {
 
 small {
   font-size: $small-font-size;
+}
+
+.half-column {
+  float: left;
+  margin-top: 3.157em;
+  margin-right: 2%;
+  width: 49%;
+
+  &:nth-of-type(2) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+
+  .half-column {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+  }
 }
