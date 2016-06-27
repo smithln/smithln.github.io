@@ -1,21 +1,24 @@
 .about {
   position: relative;
+  text-align: center;
 
   .about__title {
     margin-bottom: 0;
   }
 
   .about__description {
-    margin-top: 10px;
+    margin-top: .31em;
   }
 }
 
 .contact {
+  text-align: center;
+
   a {
     border-bottom: 0;
     color: $gray;
     font-size: $large-font-size;
-    margin-right: 20px;
+    margin-right: .56em;
     padding-bottom: 0;
 
     &:hover {
@@ -24,10 +27,16 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .about {
-    margin-top: 100px;
+article {
+  header {
+    > h2 {
+      font-size: $base-font-size;
+      font-weight: 700;
+    }
   }
+}
+
+@media screen and (max-width: $mobile) {
 
   .about__title {
     font-size: $large-font-size;
