@@ -5,6 +5,10 @@
 }
 
 .list__list-item {
+  @extend .half-column;
+}
+
+.list__list-item {
   padding-bottom: 1.33em;
 
   h2 {
@@ -28,8 +32,15 @@
     text-transform: uppercase;
   }
 
+  a {
+    border-bottom: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .date {
-    color: $brand-primary;
     font-size: $small-font-size;
   }
 }
