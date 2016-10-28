@@ -11,12 +11,15 @@ body {
   font-family: $font-primary;
   font-weight: 400;
   line-height: 1.45;
+  margin: 0;
+  border: 15px solid white;
 }
 
 .wrapper {
+  background: linear-gradient(to bottom right, #feedf8, #f3d7c4);
   margin: 0 auto;
-  max-width: 960px;
-  padding: 5.584em 1.33em 0;
+  max-width: 500px;
+  padding: 1.33em;
 }
 
 a {
