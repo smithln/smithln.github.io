@@ -1,0 +1,41 @@
+.list--unstyled {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
+}
+
+.list__list-item {
+  padding-bottom: 1.33em;
+
+  h2 {
+    font-size: $base-font-size;
+    margin: .56em 0 .31em;
+  }
+
+  h3 {
+    display: inline-block;
+    font-size: $small-font-size;
+    margin: 0;
+    margin-right: .75em;
+    position: relative;
+  }
+
+  .type {
+    font-size: $small-font-size;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  a {
+    border-bottom: 0;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .date {
+    font-size: $small-font-size;
+  }
+}

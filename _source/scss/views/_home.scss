@@ -1,0 +1,59 @@
+.about {
+  position: relative;
+
+  h1 {
+    font-size: $large-font-size;
+  }
+
+  .about__title {
+    margin-bottom: 0;
+  }
+
+  .about__description {
+    font-size: $medium-font-size;
+    margin-top: .31em;
+  }
+}
+
+.contact {
+  a {
+    border-bottom: 0;
+    font-size: $large-font-size;
+    margin-right: .56em;
+    padding-bottom: 0;
+
+    &:hover {
+      color: darken($brand-primary, 10%);
+    }
+  }
+}
+
+article {
+  header {
+    > h2 {
+      font-size: $base-font-size;
+      font-weight: 700;
+    }
+  }
+
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+.teaching {
+  margin-top: 3.157em;
+}
+
+@media screen and (max-width: $mobile) {
+
+  .about__title {
+    font-size: $large-font-size;
+  }
+
+  .about__description {
+    font-size: $medium-font-size;
+  }
+}
