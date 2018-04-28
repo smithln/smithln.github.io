@@ -4,7 +4,7 @@
   position: relative;
 
   .about__title {
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 0;
   }
 
@@ -29,7 +29,7 @@
   a {
     border-bottom: 0;
     color: $white;
-    font-size: $hero-font-size;
+    font-size: $larger-font-size;
     margin-right: 1.2em;
     padding-bottom: 0;
 
@@ -60,11 +60,9 @@ article {
 
 @media screen and (max-width: $mobile) {
 
-  .about__title {
-    font-size: $large-font-size;
-  }
-
-  .about__description {
-    font-size: $medium-font-size;
+  .about {
+    .about__bio {
+      max-width: 100%;
+    }
   }
 }
