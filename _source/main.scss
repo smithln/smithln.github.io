@@ -63,12 +63,17 @@ button {
   border: 1px solid $brand-secondary;
   border-radius: 5px;
   color: $brand-secondary;
+  font-family: $font-primary;
   font-size: $base-font-size;
   padding: 7px 15px;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+*:focus {
+    outline: none;
 }
 
 .half-column {
