@@ -28,7 +28,7 @@ a {
 }
 
 p {
-  margin-bottom: 1.3em;
+  line-height: $larger;
 }
 
 h1, h2, h3, h4 {
@@ -38,15 +38,15 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: $larger-font-size;
+  font-size: $hero-font-size;
 }
 
 h2 {
-  font-size: $large-font-size;
+  font-size: $larger-font-size;
 }
 
 h3 {
-  font-size: $medium-font-size;
+  font-size: $large-font-size;
 }
 
 h4 {
@@ -55,6 +55,15 @@ h4 {
 
 small {
   font-size: $small-font-size;
+}
+
+button {
+  background: transparent;
+  border: 1px solid $brand-secondary;
+  border-radius: 5px;
+  color: $brand-secondary;
+  font-size: $base-font-size;
+  padding: 7px 15px;
 }
 
 .half-column {

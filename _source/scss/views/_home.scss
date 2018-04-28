@@ -1,29 +1,40 @@
 .about {
+  border-bottom: 1px solid $white;
+  padding-bottom: ($hero * 1.2);
   position: relative;
 
-  h1 {
-    font-size: $large-font-size;
-  }
-
   .about__title {
+    font-weight: 700;
     margin-bottom: 0;
   }
 
   .about__description {
     font-size: $medium-font-size;
-    margin-top: .31em;
+    margin-top: 0;
+  }
+
+  .about__bio {
+    padding: $larger 0;
+    max-width: 80%;
+  }
+
+  button {
+    margin-right: $hero;
   }
 }
 
 .contact {
+  padding-top: $larger;
+
   a {
     border-bottom: 0;
-    font-size: $large-font-size;
-    margin-right: .56em;
+    color: $white;
+    font-size: $hero-font-size;
+    margin-right: 1.2em;
     padding-bottom: 0;
 
     &:hover {
-      color: darken($brand-primary, 10%);
+      color: $brand-secondary;
     }
   }
 }
