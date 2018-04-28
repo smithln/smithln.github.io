@@ -65,6 +65,10 @@ button {
   color: $brand-secondary;
   font-size: $base-font-size;
   padding: 7px 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .half-column {
