@@ -1,6 +1,7 @@
 @import 'scss/helpers/variables';
 @import 'scss/components/lists';
 @import 'scss/views/home';
+@import 'scss/views/404';
 
 html {
   background: $brand-primary;
@@ -84,6 +85,15 @@ button {
   &:nth-of-type(2) {
     margin-right: 0;
   }
+}
+
+#pong {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $hero;
+  display: block;
 }
 
 @media screen and (max-width: $mobile) {

@@ -25,6 +25,7 @@
 
 .contact {
   padding-top: $larger;
+  position: relative;
 
   a {
     border-bottom: 0;
@@ -36,6 +37,13 @@
     &:hover {
       color: $brand-secondary;
     }
+  }
+
+  .error-page-btn {
+    font-size: $base-font-size;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
   }
 }
 
