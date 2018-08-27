@@ -1,5 +1,5 @@
 .about {
-  border-bottom: 1px solid $white;
+  border-bottom: 1px solid $brand-secondary;
   padding-bottom: ($hero * 1.2);
   position: relative;
 
@@ -11,11 +11,19 @@
   .about__description {
     font-size: $medium-font-size;
     margin-top: 0;
+
+    a {
+      border-bottom: 1px solid;
+    }
   }
 
   .about__bio {
     padding: $larger 0;
     max-width: 80%;
+
+    a {
+      border-bottom: 1px solid;
+    }
   }
 
   button {
@@ -29,14 +37,9 @@
 
   a {
     border-bottom: 0;
-    color: $white;
     font-size: $larger-font-size;
     margin-right: 1.2em;
     padding-bottom: 0;
-
-    &:hover {
-      color: $brand-secondary;
-    }
   }
 
   .error-page-btn {
