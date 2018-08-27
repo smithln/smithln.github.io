@@ -35,11 +35,26 @@
   padding-top: $larger;
   position: relative;
 
+  .social-links {
+    position: absolute;
+    left: 0;
+  }
+
   a {
     border-bottom: 0;
     font-size: $larger-font-size;
     margin-right: 1.2em;
     padding-bottom: 0;
+
+    i {
+      transition: transform .2s;
+    }
+
+    &:hover {
+      i {
+        transform: translateY(-10px);
+      }
+    }
   }
 
   .error-page-btn {
