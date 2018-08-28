@@ -43,7 +43,7 @@ var update = function() {
 };
 
 var render = function() {
-  context.fillStyle = "#332f42";
+  context.fillStyle = "#f3e0d4";
   context.fillRect(0, 0, width, height);
 };
 
@@ -60,7 +60,7 @@ function Paddle(x, y, width, height) {
 }
 
 Paddle.prototype.render = function() {
-  context.fillStyle = "#FFFFFF";
+  context.fillStyle = "#342D33";
   context.fillRect(this.x, this.y, this.width, this.height);
 };
 
@@ -102,7 +102,7 @@ function Ball(x, y) {
 Ball.prototype.render = function() {
   context.beginPath();
   context.arc(this.x, this.y, this.radius, 2 * Math.PI, false);
-  context.fillStyle = "#DFB9B0";
+  context.fillStyle = "#342D33";
   context.fill();
 };
 
@@ -113,7 +113,7 @@ var computer = new Computer();
 var ball = new Ball(200, 300);
 
 var render = function() {
-  context.fillStyle = "#332f42";
+  context.fillStyle = "#f3e0d4";
   context.fillRect(0, 0, width, height);
   player.render();
   computer.render();
