@@ -1,10 +1,50 @@
 .error {
+  text-align: center;
+
   span {
-    font-size: $hero-font-size;
+    display: block;
+  }
+
+  span.header__emoji {
+    font-size: (1.2 * $hero-font-size);
+  }
+
+  &__notes {
+    text-align: center;
+
+    a {
+      border-bottom: 1px solid;
+    }
   }
 }
 
 #pong {
   width: 400px;
   height: 600px;
+}
+
+.error__notes--mobile {
+  display: none;
+  text-align: center;
+}
+
+@media screen and (max-width: $mobile) {
+
+  .error__notes--mobile {
+    display: block;
+  }
+
+  .error__notes--desktop {
+    display: none;
+  }
+
+  #pong {
+    width: 0;
+    height: 0;
+
+    canvas {
+      width: 0;
+      height: 0;
+    }
+  }
 }

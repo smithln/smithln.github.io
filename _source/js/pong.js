@@ -60,7 +60,7 @@ function Paddle(x, y, width, height) {
 }
 
 Paddle.prototype.render = function() {
-  context.fillStyle = "#342D33";
+  context.fillStyle = "#F7481C";
   context.fillRect(this.x, this.y, this.width, this.height);
 };
 
@@ -102,8 +102,10 @@ function Ball(x, y) {
 Ball.prototype.render = function() {
   context.beginPath();
   context.arc(this.x, this.y, this.radius, 2 * Math.PI, false);
-  context.fillStyle = "#342D33";
+  context.fillStyle = "#fff";
   context.fill();
+  context.strokeStyle = "#342D33";
+  context.stroke();
 };
 
 // Now we’ll build our objects and update our render function:
