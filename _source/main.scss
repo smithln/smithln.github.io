@@ -2,11 +2,10 @@
 @import 'scss/components/lists';
 @import 'scss/views/home';
 @import 'scss/views/404';
-@import 'scss/views/work';
 
 html {
   background: linear-gradient(to right, $brand-primary, #dae2f8);
-  background-size: 200% 200%;
+  background-size: 100%;
   font-size: 15px;
 }
 
@@ -18,11 +17,12 @@ body {
   line-height: 1.5;
   margin: 0;
   margin-top: 100px;
+  text-rendering: optimizeLegibility;
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 677px;
+  max-width: 800px;
   padding: 1.2em;
 }
 
@@ -137,19 +137,6 @@ form {
     }
   }
 
-  .about__bio {
-    padding: $larger 0;
-    max-width: 80%;
-
-    a {
-      border-bottom: 1px solid;
-    }
-  }
-
-  button {
-    margin-right: $hero;
-  }
-
   .btn-home {
     position: absolute;
     top: 25px;
@@ -163,8 +150,8 @@ form {
 
 .half-column {
   float: left;
-  margin-right: 2%;
-  width: 49%;
+  margin-right: 5%;
+  width: 40%;
 
   &:nth-of-type(2) {
     margin-right: 0;
@@ -183,9 +170,27 @@ form {
 
 @media screen and (max-width: $mobile) {
 
+  body {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: $larger-font-size;
+  }
+
+  h2 {
+    font-size: $large-font-size;
+  }
+
   .half-column {
     float: none;
     margin-right: 0;
     width: 100%;
+  }
+
+  .about {
+    .btn-home {
+      position: relative;
+    }
   }
 }

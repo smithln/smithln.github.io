@@ -1,6 +1,21 @@
 .site-home {
+  margin: 0 auto;
+
   .about {
     margin-bottom: 0;
+
+    .about__bio {
+      padding: $larger 0;
+      max-width: 70%;
+
+      a {
+        border-bottom: 1px solid;
+      }
+    }
+
+    button {
+      margin-right: $hero;
+    }
   }
 }
 
