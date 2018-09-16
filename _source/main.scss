@@ -5,7 +5,8 @@
 @import 'scss/views/work';
 
 html {
-  background: $brand-primary;
+  background: linear-gradient(to right, $brand-primary, #dae2f8);
+  background-size: 200% 200%;
   font-size: 15px;
 }
 
