@@ -79,6 +79,15 @@ button {
   }
 }
 
+.btn-no-outline {
+  border: 0;
+  padding: 0;
+}
+
+.btn-large {
+  font-size: $larger-font-size;
+}
+
 form {
   .form-item {
     .field-label {

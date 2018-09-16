@@ -45,11 +45,15 @@
     }
   }
 
-  .error-page-btn {
-    font-size: $base-font-size;
-    margin-right: 0;
+  .contact-links {
     position: absolute;
     right: 0;
+
+    .contact-btn {
+      font-size: $base-font-size;
+      margin-right: 0;
+      margin-left: 1.2em;
+    }
   }
 }
 
