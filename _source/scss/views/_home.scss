@@ -1,33 +1,6 @@
-.about {
-  border-bottom: 1px solid $brand-secondary;
-  padding-bottom: ($hero * 1.2);
-  position: relative;
-
-  .about__title {
-    font-weight: 900;
+.site-home {
+  .about {
     margin-bottom: 0;
-  }
-
-  .about__description {
-    font-size: $medium-font-size;
-    margin-top: 0;
-
-    a {
-      border-bottom: 1px solid;
-    }
-  }
-
-  .about__bio {
-    padding: $larger 0;
-    max-width: 80%;
-
-    a {
-      border-bottom: 1px solid;
-    }
-  }
-
-  button {
-    margin-right: $hero;
   }
 }
 
