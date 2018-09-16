@@ -6,7 +6,7 @@
 
     .about__bio {
       padding: $larger 0;
-      max-width: 70%;
+      width: 70%;
 
       a {
         border-bottom: 1px solid;
@@ -52,9 +52,20 @@
     .contact-btn {
       font-size: $base-font-size;
       margin-right: 0;
-      margin-left: 1.2em;
     }
   }
+}
+
+.egg {
+  border: 1px solid $black;
+  border-bottom: 0;
+  border-right: 0;
+  border-top-left-radius: 5px;
+  font-size: $base-font-size;
+  padding: 7px 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 article {
@@ -78,13 +89,15 @@ article {
 
 @media screen and (max-width: $mobile) {
 
-  .about {
-    .about__bio {
-      max-width: 100%;
+  .site-home {
+    .about {
+      .about__bio {
+        width: 100%;
+      }
     }
   }
 
-  .error-page-btn {
+  .egg {
     display: none;
   }
 }
