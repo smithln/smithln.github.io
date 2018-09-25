@@ -4,13 +4,35 @@
   .about {
     margin-bottom: 0;
 
+    .about__title {
+      font-size: 5.16em;
+      line-height: 1.2em;
+      padding-top: 150px;
+      padding-bottom: 50px;
+    }
+
+    .about__bio-image {
+      position: absolute;
+      top: 90px;
+      left: -50px;
+      width: 25%;
+      z-index: -1;
+    }
+
     .about__bio {
       padding: $larger 0;
-      width: 70%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60%;
 
       a {
         border-bottom: 1px solid;
       }
+    }
+
+    .about__description {
+      display: none;
     }
 
     button {
@@ -30,6 +52,7 @@
 
   a {
     border-bottom: 0;
+    color: $black;
     font-size: $larger-font-size;
     margin-right: 1.2em;
     padding-bottom: 0;
@@ -91,8 +114,25 @@ article {
 
   .site-home {
     .about {
+      padding-top: 50px;
+
+      .about__title {
+        font-size: 2.986em;
+        padding-top: 0;
+        padding-bottom: 7px;
+      }
+
+      .about__description {
+        display: inline;
+      }
+
       .about__bio {
+        position: relative;
         width: 100%;
+      }
+
+      .about__bio-image {
+        display: none;
       }
     }
   }

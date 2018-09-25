@@ -17,7 +17,7 @@ body {
   letter-spacing: .03em;
   line-height: 1.5;
   margin: 0;
-  margin-top: 100px;
+  margin-top: 50px;
   text-rendering: optimizeLegibility;
 }
 
@@ -128,7 +128,7 @@ form {
 }
 
 .about {
-  border-bottom: 1px solid $brand-secondary;
+  border-bottom: 1px solid $black;
   padding-bottom: ($hero * 1.2);
   margin-bottom: ($hero * 1.2);
   position: relative;
