@@ -5,7 +5,6 @@
 @import 'scss/views/404';
 
 html {
-  background: linear-gradient(to right, $brand-primary, #dae2f8);
   background-size: 100%;
   font-size: 15px;
 }
@@ -23,7 +22,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1024px;
   padding: 1.2em;
 }
 
@@ -66,7 +65,7 @@ small {
   font-size: $small-font-size;
 }
 
-button {
+button, .btn {
   background: transparent;
   border: 1px solid $brand-secondary;
   border-radius: 5px;
@@ -82,7 +81,12 @@ button {
 
 .btn-no-outline {
   border: 0;
+  border-radius: 0;
   padding: 0;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
 }
 
 .btn-large {
@@ -128,7 +132,6 @@ form {
 }
 
 .about {
-  border-bottom: 1px solid $black;
   padding-bottom: ($hero * 1.2);
   margin-bottom: ($hero * 1.2);
   position: relative;

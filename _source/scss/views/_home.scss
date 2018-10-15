@@ -1,30 +1,47 @@
 .site-home {
   margin: 0 auto;
 
+  .nav-links {
+    padding-bottom: 50px;
+
+    .wrapper--nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      margin-left: $larger;
+    }
+  }
+
+  .page-title {
+    position: relative;
+    top: 25px;
+
+    h1 {
+      background: $white;
+      font-size: 2.986em;
+      font-weight: 600;
+      letter-spacing: .05em;
+      line-height: 1.2em;
+      padding-bottom: 8px;
+    }
+
+    img {
+      position: absolute;
+      top: -50px;
+      left: -69px;
+      width: 72%;
+      z-index: -1;
+    }
+  }
+
   .about {
     margin-bottom: 0;
 
-    .about__title {
-      font-size: 5.16em;
-      line-height: 1.2em;
-      padding-top: 150px;
-      padding-bottom: 50px;
-    }
-
-    .about__bio-image {
-      position: absolute;
-      top: 90px;
-      left: -50px;
-      width: 25%;
-      z-index: -1;
-    }
-
     .about__bio {
-      padding: $larger 0;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 60%;
+      padding: $larger 0 $larger 8.359em;
+      width: 30%;
 
       a {
         border-bottom: 1px solid;
@@ -38,6 +55,16 @@
     button {
       margin-right: $hero;
     }
+  }
+}
+
+.shapes {
+  position: absolute;
+  right: 0;
+  top: 35%;
+
+  img {
+    width: 45%;
   }
 }
 
@@ -65,16 +92,6 @@
       i {
         transform: translateY(-10px);
       }
-    }
-  }
-
-  .contact-links {
-    position: absolute;
-    right: 0;
-
-    .contact-btn {
-      font-size: $base-font-size;
-      margin-right: 0;
     }
   }
 }
