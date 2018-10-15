@@ -21,6 +21,16 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.site {
+  > section {
+    animation-delay: .25s;
+  }
+
+  main {
+    animation-delay: .25s;
+  }
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1024px;

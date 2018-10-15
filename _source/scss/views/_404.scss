@@ -18,6 +18,16 @@
   }
 }
 
+.error__notes--desktop {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 50%;
+    padding: 0 $hero;
+  }
+}
+
 #pong {
   width: 400px;
   height: 600px;
