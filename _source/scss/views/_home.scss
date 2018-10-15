@@ -8,7 +8,9 @@
   .about {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0;
+    padding-bottom: ($hero * 1.2);
+    margin-bottom: ($hero * 1.2);
+    position: relative;
 
     .bio {
       max-width: 550px;
@@ -24,6 +26,9 @@
 
     .bio--short {
       display: none;
+      font-size: $base-font-size;
+      font-weight: 600;
+      margin-top: 0;
     }
 
     .shapes {

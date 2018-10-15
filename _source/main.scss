@@ -132,40 +132,8 @@ form {
   }
 }
 
-.about {
-  padding-bottom: ($hero * 1.2);
-  margin-bottom: ($hero * 1.2);
-  position: relative;
-
-  .bio--short {
-    font-size: $base-font-size;
-    font-weight: 600;
-    margin-top: 0;
-
-    a {
-      border-bottom: 1px solid;
-    }
-  }
-
-  .btn-home {
-    position: absolute;
-    top: 25px;
-    right: 0;
-  }
-}
-
 *:focus {
     outline: none;
-}
-
-.half-column {
-  float: left;
-  margin-right: 5%;
-  width: 40%;
-
-  &:nth-of-type(2) {
-    margin-right: 0;
-  }
 }
 
 #pong {
@@ -190,11 +158,5 @@ form {
 
   h2 {
     font-size: $large-font-size;
-  }
-
-  .half-column {
-    float: none;
-    margin-right: 0;
-    width: 100%;
   }
 }
