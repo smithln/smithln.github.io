@@ -5,42 +5,6 @@
     animation-delay: .25s;
   }
 
-  .nav-links {
-    padding-bottom: 50px;
-
-    .wrapper--nav {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    button {
-      margin-left: $larger;
-    }
-  }
-
-  .page-title {
-    position: relative;
-    top: 25px;
-
-    h1 {
-      background: $white;
-      font-size: 2.986em;
-      font-weight: 600;
-      letter-spacing: .05em;
-      line-height: 1.2em;
-      padding-bottom: 8px;
-    }
-
-    img {
-      position: absolute;
-      top: -50px;
-      left: -69px;
-      width: 72%;
-      z-index: -1;
-      animation-delay: 1s;
-    }
-  }
-
   .about {
     display: flex;
     justify-content: space-between;
@@ -138,21 +102,6 @@ article {
 @media screen and (max-width: $mobile) {
 
   .site-home {
-    .page-title {
-      top: 0;
-
-      h1 {
-        font-size: $large-font-size;
-      }
-      img {
-        display: none;
-      }
-    }
-
-    .page-links {
-      max-width: 35%;
-    }
-
     .about {
       margin-bottom: 5.805em;
 

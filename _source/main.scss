@@ -3,6 +3,7 @@
 @import 'scss/views/home';
 @import 'scss/views/reading-list';
 @import 'scss/views/404';
+@import 'scss/views/nav';
 
 html {
   background-size: 100%;
@@ -195,12 +196,5 @@ form {
     float: none;
     margin-right: 0;
     width: 100%;
-  }
-
-  .about {
-    .btn-home {
-      position: relative;
-      margin-bottom: 2.4888em;
-    }
   }
 }
