@@ -1,6 +1,10 @@
 .site-home {
   margin: 0 auto;
 
+  section {
+    animation-delay: .25s;
+  }
+
   .nav-links {
     padding-bottom: 50px;
 
@@ -33,6 +37,7 @@
       left: -69px;
       width: 72%;
       z-index: -1;
+      animation-delay: 1s;
     }
   }
 
@@ -60,10 +65,12 @@
     .shapes {
 
       .shapes--left {
+        animation-delay: 1s;
         width: 30%;
       }
 
       .shapes--right {
+        animation-delay: 1.2s;
         position: absolute;
         right: 0;
         top: 25%;
