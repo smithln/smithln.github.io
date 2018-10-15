@@ -87,6 +87,10 @@
   position: absolute;
   right: 0;
   bottom: 0;
+
+  .btn-no-outline:hover {
+    border-bottom: 0;
+  }
 }
 
 article {

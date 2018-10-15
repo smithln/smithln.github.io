@@ -1,3 +1,11 @@
+.site-books {
+  .page-header {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: $hero;
+  }
+}
+
 .reading-rec {
 
   .reading-rec__list {
@@ -11,7 +19,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 20px;
+    padding: $hero;
   }
 
   .reading-rec__list-item-image {
