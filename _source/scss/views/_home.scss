@@ -128,33 +128,43 @@ article {
   }
 }
 
-.teaching {
-  margin-top: 3.157em;
-}
-
 @media screen and (max-width: $mobile) {
 
   .site-home {
-    .about {
-      padding-top: 50px;
+    .page-title {
+      top: 0;
 
-      .about__title {
-        font-size: 2.986em;
-        padding-top: 0;
-        padding-bottom: 7px;
+      h1 {
+        font-size: $large-font-size;
       }
-
-      .about__description {
-        display: inline;
-      }
-
-      .about__bio {
-        position: relative;
-        width: 100%;
-      }
-
-      .about__bio-image {
+      img {
         display: none;
+      }
+    }
+
+    .page-links {
+      max-width: 35%;
+    }
+
+    .about {
+      margin-bottom: 5.805em;
+
+      .bio--short {
+        display: block;
+        padding: 0 $larger;
+      }
+
+      .bio {
+        max-width: none;
+      }
+
+      p {
+        padding: 0 $larger;
+      }
+
+      .shapes {
+        position: absolute;
+        top: 90%;
       }
     }
   }

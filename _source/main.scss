@@ -137,7 +137,8 @@ form {
   position: relative;
 
   .bio--short {
-    font-size: $medium-font-size;
+    font-size: $base-font-size;
+    font-weight: 600;
     margin-top: 0;
 
     a {
