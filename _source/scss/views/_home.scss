@@ -37,34 +37,39 @@
   }
 
   .about {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 0;
 
-    .about__bio {
-      padding: $larger 0 $larger 8.359em;
-      width: 30%;
+    .bio {
+      max-width: 550px;
+    }
+
+    p {
+      padding: $larger 5.805em;
 
       a {
         border-bottom: 1px solid;
       }
     }
 
-    .about__description {
+    .bio--short {
       display: none;
     }
 
-    button {
-      margin-right: $hero;
+    .shapes {
+
+      .shapes--left {
+        width: 30%;
+      }
+
+      .shapes--right {
+        position: absolute;
+        right: 0;
+        top: 25%;
+        width: 20%;
+      }
     }
-  }
-}
-
-.shapes {
-  position: absolute;
-  right: 0;
-  top: 35%;
-
-  img {
-    width: 45%;
   }
 }
 

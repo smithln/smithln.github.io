@@ -136,12 +136,7 @@ form {
   margin-bottom: ($hero * 1.2);
   position: relative;
 
-  .about__title {
-    font-weight: 900;
-    margin-bottom: 0;
-  }
-
-  .about__description {
+  .bio--short {
     font-size: $medium-font-size;
     margin-top: 0;
 
