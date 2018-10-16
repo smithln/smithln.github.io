@@ -4,27 +4,20 @@
   .about {
     display: flex;
     justify-content: space-between;
-    padding-bottom: ($hero * 1.2);
-    margin-bottom: ($hero * 1.2);
+    margin-bottom: ($larger * 1.2);
     position: relative;
 
     .bio {
       max-width: 550px;
+      padding-top: $base;
     }
 
     p {
-      padding: $larger 5.805em;
+      padding: 0 5.805em $base 5.805em;
 
       a {
         border-bottom: 1px solid;
       }
-    }
-
-    .bio--short {
-      display: none;
-      font-size: $base-font-size;
-      font-weight: 600;
-      margin-top: 0;
     }
 
     .shapes {
@@ -109,11 +102,6 @@ article {
   .site-home {
     .about {
       margin-bottom: 5.805em;
-
-      .bio--short {
-        display: block;
-        padding: 0 $larger;
-      }
 
       .bio {
         max-width: none;
