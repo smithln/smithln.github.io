@@ -46,6 +46,14 @@
   }
 }
 
+@media screen and (max-width: 1120px) {
+  .page-title {
+    img {
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width: $mobile) {
   .page-title {
     top: 0;
@@ -53,9 +61,10 @@
     h1 {
       font-size: $large-font-size;
     }
-    img {
-      display: none;
-    }
+  }
+
+  .nav-links {
+    padding-bottom: 0;
   }
 
   .page-links {
