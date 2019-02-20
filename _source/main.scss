@@ -4,10 +4,17 @@
 @import 'scss/views/reading-list';
 @import 'scss/views/404';
 @import 'scss/views/nav';
+@import url('https://rsms.me/inter/inter.css');
 
 html {
   background-size: 100%;
   font-size: 15px;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
 }
 
 body {
@@ -57,6 +64,7 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
+  font-family: $font-secondary;
   font-size: $hero-font-size;
 }
 
