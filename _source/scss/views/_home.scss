@@ -101,21 +101,25 @@ article {
 
   .site-home {
     .about {
-      margin-bottom: 8.5em;
+      margin-bottom: $larger;
 
       .bio {
         max-width: none;
+        padding: $larger;
       }
 
       p {
-        padding: 0 $larger;
+        padding: 0;
       }
 
       .shapes {
-        position: absolute;
-        bottom: -120px;
+        display: none;
       }
     }
+  }
+
+  .contact {
+    margin-left: $larger;
   }
 
   .egg {
