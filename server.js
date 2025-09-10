@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // route
 app.get('/', (req, res) => {
-  res.render('index', { name: 'Lauren', role: 'Design Director' });
+  res.render('index');
 });
 
 app.listen(PORT, () => {
