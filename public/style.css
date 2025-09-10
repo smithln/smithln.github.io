@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #333;
+}
