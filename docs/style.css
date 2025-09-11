@@ -126,3 +126,14 @@ p, li {
   line-height: 1.35;
   text-decoration: underline;
 }
+
+/* Small tablets and up (≥640px) */
+@media (max-width: 640px) {
+  html {
+    font-size: 10px;
+  }
+
+  .wrapper {
+    margin: 30px;
+  }
+}
