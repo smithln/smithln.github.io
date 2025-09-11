@@ -16,10 +16,9 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-// Optional: route for any additional pages
-// app.get('/about', (req, res) => {
-//   res.render('about');
-// });
+app.get('/experience', (req, res) => {
+  res.render('experience');
+});
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
