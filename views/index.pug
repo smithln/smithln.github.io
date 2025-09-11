@@ -1,17 +1,28 @@
 doctype html
 html
   head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
     title= "Lauren Ott | Design Leader"
+
     link(rel="preconnect", href="https://fonts.googleapis.com")
     link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin="")
-    link(href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet")
+
     link(href="https://use.fontawesome.com/releases/v5.0.10/css/brands.css", rel="stylesheet")
     link(href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css", rel="stylesheet")
+
     link(rel="stylesheet", href="/style.css")
   body
-    div.intro
-      h1 Lauren Ott
-      h4 I lead Flatiron Health’s Design team, where we build technology that helps us learn from every person’s experience with cancer.
-    div.social
-      a(href="https://www.linkedin.com/in/laurenicolesmith/", target="_blank", rel="noopener")
-        i.fab.fa-linkedin-in
+    div.wrapper
+      div.intro
+        h1 Lauren Ott
+        h4 I lead #[a(href="https://flatiron.com/", target="_blank", rel="noopener") Flatiron Health’s] Design team, where we build technology that helps us learn from every person’s experience with cancer.
+      div.links
+        div.social
+          a(href="https://www.linkedin.com/in/laurenicolesmith/", target="_blank", rel="noopener")
+            i.fab.fa-linkedin-in
+        div.resume
+          a(href="#", target="_blank", rel="noopener")
+            h4 
