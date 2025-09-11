@@ -19,6 +19,12 @@ body {
   margin: 100px;
 }
 
+.alt-heading {
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 a, a:link, a:visited {
   color: #173EF5;
 }
@@ -57,14 +63,26 @@ p, li {
   margin-bottom: 1em;
 }
 
+.logo {
+  color: #EEEFDF;
+  background-color: #173EF5;
+  display: inline;
+  padding: 4px 8px;
+  border-radius: 7px;
+  letter-spacing: 1px;
+}
+
 .intro {
   padding-bottom: 2.429rem;
-  padding-top: 15%;
+  padding-top: 10%;
   border-bottom: 1px solid;
 }
 
 .links {
   padding-top: 2.429rem;
+}
+
+.links, .company {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,16 +92,14 @@ p, li {
   font-size: 1.571rem;
 }
 
-.resume {
-  font-family: "Sofia Sans Condensed", sans-serif;
-  text-transform: uppercase;
-}
-
 .resume h4 {
-  font-weight: 700;
   margin: 0;
 }
 
 .resume a {
   text-decoration: none;
+}
+
+.position p {
+  font-style: italic;
 }
