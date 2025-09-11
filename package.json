@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "build": "pug views/ -o docs/ --pretty",
-    "watch": "pug -w views/ -o docs/ --pretty"
+    "watch": "pug -w views/ -o docs/ --pretty",
+    "serve": "node server.js",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\""
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
