@@ -81,6 +81,9 @@ p, li {
 .intro {
   padding-bottom: 1.44rem;
   padding-top: 10%;
+}
+
+.intro-index {
   border-bottom: 1px solid;
 }
 
@@ -112,4 +115,14 @@ p, li {
 
 .position h5 {
   margin: 1rem 0;
+}
+
+.link-out {
+  margin-top: 2.986rem;
+}
+
+.link-out a {
+  font-size: 1.7284rem;
+  line-height: 1.35;
+  text-decoration: underline;
 }
