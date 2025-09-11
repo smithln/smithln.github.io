@@ -8,8 +8,19 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-size: 1rem; /* 14px */
   line-height: 1.6;
+  margin: 0;
+  min-height: 100vh; 
+  border: 25px solid #FFF; 
+  box-sizing: border-box; 
+}
+
+.wrapper {
   max-width: 800px;
-  margin: 100px auto;
+  margin: 100px;
+}
+
+a, a:link, a:visited {
+  color: #173EF5;
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
@@ -48,10 +59,31 @@ p, li {
 
 .intro {
   padding-bottom: 2.429rem;
+  padding-top: 15%;
   border-bottom: 1px solid;
 }
 
-.social {
+.links {
   padding-top: 2.429rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
   font-size: 1.571rem;
+}
+
+.resume {
+  font-family: "Sofia Sans Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.resume h4 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.resume a {
+  text-decoration: none;
 }
