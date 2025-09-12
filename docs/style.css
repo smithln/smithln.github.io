@@ -1,11 +1,31 @@
+/* variables */
+
+:root {
+  --color-primary: #173EF5;
+  --color-secondary: #EEEFDF;
+
+  --font-base: 'Libre Baskerville', serif;
+  --font-alt: "Sofia Sans Condensed", sans-serif;
+
+  --spacing-unit: 1rem; 
+
+  --fs-h1: 2.986rem;
+  --fs-h2: 2.488rem;
+  --fs-h3: 2.074rem;
+  --fs-h4: 1.728rem;
+  --fs-h5: 1.44rem;
+  --fs-h6: 1.2rem;
+  --fs-body: 1rem;
+}
+
 html {
   font-size: 14px; /* base */
 }
 
 body {
-  background-color: #EEEFDF;
-  color: #173EF5;
-  font-family: 'Libre Baskerville', serif;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-family: var(--font-base);
   font-size: 1rem; /* 14px */
   line-height: 1.6;
   margin: 0;
@@ -20,13 +40,13 @@ body {
 }
 
 .alt-heading {
-  font-family: "Sofia Sans Condensed", sans-serif;
+  font-family: var(--font-alt);
   font-weight: 700;
   text-transform: uppercase;
 }
 
 a, a:link, a:visited {
-  color: #173EF5;
+  color: var(--color-primary);
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
@@ -71,8 +91,8 @@ p, li {
 }
 
 .logo {
-  color: #EEEFDF;
-  background-color: #173EF5;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
   display: inline;
   padding: 4px 8px;
   border-radius: 7px;
@@ -123,7 +143,7 @@ p, li {
 }
 
 hr {
-  border-top: 1px solid #173EF5;
+  border-top: 1px solid var(--color-primary);
   margin-top: 3rem;
 }
 
