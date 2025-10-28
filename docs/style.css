@@ -4,8 +4,8 @@
   --color-primary: #004664;
   --color-secondary: #f8f5f3;
 
-  --font-base: 'Moderat', 'Libre Baskerville', serif;
-  --font-alt: 'Moderat Extended', "Sofia Sans Condensed", sans-serif;
+  --font-base: 'Moderat', sans-serif;
+  --font-alt: 'Moderat Extended', sans-serif;
 
   --spacing-unit: 1rem; 
 
