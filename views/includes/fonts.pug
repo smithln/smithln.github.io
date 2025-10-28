@@ -1,0 +1,12 @@
+mixin fontFace(family, fileName, weight='normal', style='normal')
+  style.
+    @font-face {
+      font-family: '#{family}';
+      src: url('/fonts/#{fileName}.woff2') format('woff2');
+      font-weight: #{weight};
+      font-style: #{style};
+      font-display: swap;
+    }
+
++fontFace('Moderat', 'moderat-medium', '500')
++fontFace('Moderat Extended', 'moderat-extended-light', '300')

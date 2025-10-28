@@ -4,8 +4,8 @@
   --color-primary: #004664;
   --color-secondary: #f8f5f3;
 
-  --font-base: 'Libre Baskerville', serif;
-  --font-alt: "Sofia Sans Condensed", sans-serif;
+  --font-base: 'Moderat', 'Libre Baskerville', serif;
+  --font-alt: 'Moderat Extended', "Sofia Sans Condensed", sans-serif;
 
   --spacing-unit: 1rem; 
 
@@ -41,8 +41,6 @@ body {
 
 .alt-heading {
   font-family: var(--font-alt);
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 a, a:link, a:visited {
@@ -91,12 +89,8 @@ p, li {
 }
 
 .logo {
-  color: var(--color-secondary);
-  background-color: var(--color-primary);
   display: inline;
-  padding: 4px 8px;
-  border-radius: 7px;
-  letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .intro {
@@ -132,10 +126,6 @@ p, li {
 
 .resume a {
   text-decoration: none;
-}
-
-.position p {
-  font-style: italic;
 }
 
 .position h5 {
