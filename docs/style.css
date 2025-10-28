@@ -133,6 +133,8 @@ p, li {
 
 hr {
   border-top: 1px solid var(--color-primary);
+  background-color: transparent;
+  line-height: 1px;
   margin-top: 3rem;
 }
 
