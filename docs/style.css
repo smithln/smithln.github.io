@@ -34,8 +34,9 @@ body {
 }
 
 .wrapper {
+  margin: 0 auto;
   max-width: 800px;
-  margin: 100px;
+  padding: 100px;
 }
 
 .alt-heading {
@@ -155,6 +156,6 @@ hr {
   }
 
   .wrapper {
-    margin: 30px;
+    padding: 30px;
   }
 }
