@@ -102,10 +102,26 @@ p, li {
   border-bottom: 1px solid;
 }
 
+.experience {
+  padding-top: 0;
+}
+
+.date {
+  margin: 0;
+}
+
 .links, .company {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.company  {
+  padding-top: 30px;
+}
+
+.company h2 {
+  margin: 0;
 }
 
 .links {
