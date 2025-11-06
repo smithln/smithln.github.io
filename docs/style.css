@@ -3,30 +3,31 @@
 :root {
   --color-primary: #004664;
   --color-secondary: #f8f5f3;
+  --color-tertiary: #E094BB;
 
   --font-base: 'Moderat', sans-serif;
   --font-alt: 'Moderat Extended', sans-serif;
 
   --spacing-unit: 1rem; 
 
-  --fs-h1: 2.986rem;
-  --fs-h2: 2.488rem;
-  --fs-h3: 2.074rem;
-  --fs-h4: 1.728rem;
-  --fs-h5: 1.44rem;
-  --fs-h6: 1.2rem;
+  --fs-h1: 1rem;
+  --fs-h2: 1rem;
+  --fs-h3: 1rem;
+  --fs-h4: 1rem;
+  --fs-h5: 1rem;
+  --fs-h6: 1rem;
   --fs-body: 1rem;
 }
 
 html {
-  font-size: 14px; /* base */
+  font-size: 18px; /* base */
 }
 
 body {
   background-color: var(--color-secondary);
   color: var(--color-primary);
   font-family: var(--font-base);
-  font-size: 1rem; /* 14px */
+  font-size: 1rem; /* 18px */
   line-height: 1.6;
   margin: 0;
   min-height: 100vh; 
@@ -34,144 +35,300 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  gap: 80px;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 100px;
+  max-width: 1200px;
+  padding: 80px 40px;
+  align-items: flex-start;
 }
 
 .alt-heading {
-  font-family: var(--font-alt);
+  font-family: var(--font-base);
 }
 
 a, a:link, a:visited {
   color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
   font-weight: 400;
-  margin-bottom: 0.5em;
+  margin: 0;
 }
 
-/* Minor Third */
+/* Flat hierarchy */
 h1 {
-  font-size: 2.986rem; 
-  line-height: 1.2;
+  font-size: 1rem; 
+  line-height: 1.6;
 }
 
 h2 {
-  font-size: 2.488rem; 
-  line-height: 1.25;
+  font-size: 1rem; 
+  line-height: 1.6;
 }
 
 h3 {
-  font-size: 2.074rem; 
-  line-height: 1.3;
+  font-size: 1rem; 
+  line-height: 1.6;
 }
 
 h4 {
-  font-size: 1.728rem; 
-  line-height: 1.35;
+  font-size: 1rem; 
+  line-height: 1.6;
+  margin-bottom: 0.5em;
 }
 
 h5 {
-  font-size: 1.44rem; 
-  line-height: 1.4;
+  font-size: 1rem; 
+  line-height: 1.6;
 }
 
 h6 {
-  font-size: 1.2rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 p, li {
-  font-size: 1rem; /* 14px base */
+  font-size: 1rem; /* 18px base */
   margin-bottom: 1em;
+  line-height: 1.6;
 }
 
-.logo {
-  display: inline;
-  text-decoration: none;
-}
-
-.intro {
-  padding-bottom: 1.44rem;
-  padding-top: 10%;
-}
-
-.intro-index {
-  border-bottom: 1px solid;
-}
-
-.experience {
+/* Sidebar */
+.sidebar {
+  flex: 0 0 280px;
+  position: sticky;
+  top: 80px;
   padding-top: 0;
 }
 
-.date {
+.name {
+  font-family: var(--font-base);
+  font-size: 1rem;
   margin: 0;
+  line-height: 1.6;
 }
 
-.links, .company {
+.job-title {
+  font-family: var(--font-base);
+  font-size: 1rem;
+  margin: 0 0 40px 0;
+  color: var(--color-primary);
+}
+
+.social-links {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-links a {
+  font-size: 1rem;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-.company  {
-  padding-top: 30px;
+.social-links a:hover {
+  text-decoration: none;
+  opacity: 0.7;
 }
 
-.company h2 {
-  margin: 0;
+/* Main Content */
+.main-content {
+  flex: 1;
+  min-width: 0;
 }
 
-.links {
-  padding-top: 1.44rem;
+/* Intro Section */
+
+.intro-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
 }
 
-.social {
-  font-size: 1.44rem;
+.intro-section a {
+  border-bottom: 2px solid var(--color-tertiary);
 }
 
-.position {
-  margin-bottom: 1.44rem;
-}
-
-.resume h5 {
-  margin: 0;
-}
-
-.resume a {
+.intro-section a:hover {
   text-decoration: none;
 }
 
-.position h5 {
-  margin: 1rem 0;
+.intro-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: none;
 }
 
 hr {
+  border: 0;
   border-top: 1px solid var(--color-primary);
+  margin: 50px 0;
   background-color: transparent;
-  line-height: 1px;
-  margin-top: 3rem;
 }
 
-.link-out {
-  margin-top: 2.986rem;
+/* Experience Section */
+.experience-section {
+  margin-top: 0;
 }
 
-.link-out a {
-  font-size: 1.44rem;
-  line-height: 1.4;
-  text-decoration: underline;
+.experience-item {
+  margin-bottom: 60px;
 }
 
-/* Small tablets and up (≥640px) */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.company-name {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.date {
+  font-family: var(--font-base);
+  font-size: 1rem;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.experience-content {
+  margin-left: 0;
+}
+
+.role {
+  margin-bottom: 32px;
+}
+
+.role:last-child {
+  margin-bottom: 0;
+}
+
+.role h4 {
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.role p {
+  margin-bottom: 1em;
+  max-width: 700px;
+}
+
+.previous-role {
+  font-size: 1rem;
+  color: var(--color-primary);
+  opacity: 0.8;
+  margin-top: 1em;
+}
+
+.experience-footer {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-primary);
+}
+
+.experience-footer a {
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-tertiary);
+}
+
+.experience-footer a:hover {
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .sidebar {
+    flex: none;
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 40px 24px;
+    gap: 40px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+  
+  .job-title {
+    font-size: 1rem;
+  }
+
+  .intro-section {
+    margin-bottom: 60px;
+  }
+  
+  .intro-text,
+  .intro-section p {
+    font-size: 1rem;
+  }
+  
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .experience-item {
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 640px) {
   html {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .wrapper {
-    padding: 30px;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+  
+  .job-title {
+    font-size: 1rem;
+  }
+  
+  .intro-text,
+  .intro-section p {
+    font-size: 1rem;
+  }
+
+  .company-name {
+    font-size: 1rem;
   }
 }

@@ -3,13 +3,52 @@ html
   include includes/head.pug
   body
     div.wrapper
-      div.intro.intro-index
-        h1.alt-heading Lauren Ott
-        h4 I lead #[a(href="https://flatiron.com/", target="_blank", rel="noopener") Flatiron Health’s] Design team, where we build technology that helps us learn from every person’s experience with cancer.
-      div.links
-        div.social
-          a(href="https://www.linkedin.com/in/laurenicolesmith/", target="_blank", rel="noopener")
+      aside.sidebar
+        h1.alt-heading.name Lauren Ott
+        p.job-title Design Leader
+        div.social-links
+          a(href="https://www.linkedin.com/in/laurenicolesmith/", target="_blank", rel="noopener", aria-label="LinkedIn")
             i.fab.fa-linkedin-in
-        div.resume
-          a(href="/experience", rel="noopener")
-            h5 resume
+
+      main.main-content
+        section.intro-section
+          p.intro-text I lead #[a(href="https://flatiron.com/", target="_blank", rel="noopener") Flatiron Health's] Design team, where we build technology that helps us learn from every person's experience with cancer.
+
+        hr
+
+        section.experience-section
+          div.experience-item
+            div.experience-header
+              h2.alt-heading.company-name Flatiron Health
+              span.date 2019 - present
+            div.experience-content
+              div.role
+                h4 Head of Design
+                p I lead a team of 20+ Designers that span across Product Design, Brand, and Design Infrastructure. Together we help drive product strategy, scale design's impact through systems and practices, and elevate oncology research takeaways through visual storytelling.
+              div.role
+                h4 Senior Director, Product Design
+                p As a Senior Director, I led our Healthcare Design team and Design Systems team. Our Flagship product is an EHR built for Oncologists, used to document patient care and order treatment.
+                p Our Design Systems initiative spans all products across the business, including internal tooling that helps us enable cancer research and insights powered by real world data.
+                p.previous-role Previously — Director of Product Design, Healthcare & Lead Product Design Manager
+
+          div.experience-item
+            div.experience-header
+              h2.alt-heading.company-name Design Mentor
+              span.date 2015 - present
+            div.experience-content
+              div.role
+                h4 Various
+                p I mentor designers looking to make the transition into product design and design management. I've worked with organizations like Bloc and General Assembly to pair directly with individuals as well as teach courses focused on getting started with front-end development.
+
+          div.experience-item
+            div.experience-header
+              h2.alt-heading.company-name ATTN: Media
+              span.date 2014 - 2019
+            div.experience-content
+              div.role
+                h4 Product Design Manager
+                p As a Manager, I led a team focused on building web-based engagement platforms that paired with our scripted media. My team also designed and prototyped internal tools that helped streamline content discoverability and content management across thousands of files and social posts.
+                p.previous-role Previously — UI Engineer
+
+          div.experience-footer
+            a(href="https://www.linkedin.com/in/laurenicolesmith/", target="_blank", rel="noopener") See all on LinkedIn →
